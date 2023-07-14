@@ -6,7 +6,7 @@
  * description: print a quote using write fonction
  *
  *
- * Return : 1 (error).
+ * Return: 1 (error).
 */
 
 int main(void)
