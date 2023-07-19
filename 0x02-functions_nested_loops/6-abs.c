@@ -1,10 +1,19 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - prints 10 times the alphabet
+ * _abs - printing the absolute value
+ *
+ *@n: imput number as intiger
+ *
+ *Return: return int n if n >= 0, else return int n * -1
 */
 
-int _abs(int)
+int _abs(int n)
 {
-	
+	if (n >= 0)
+	{
+		return (n);
+	}
+	else
+		return (n * -1);
 }
