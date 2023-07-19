@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints 10 times the alphabet
+ *print_last_digit - prints 10 times the alphabet
  *
- * @n: intiger number
+ *@n: intiger number
  *
- *@last_digit:  value of the last digit
+ *@last_digit: value of the last digit
  *
  *Return: the value of last_digit
 */
