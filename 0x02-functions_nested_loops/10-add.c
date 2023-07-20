@@ -1,7 +1,13 @@
 #include "main.h"
 
 /**
-* print_alphabet_x10 - prints 10 times the alphabet
+ *add  - print the sum of two intiger
+ *
+ *@a: first input
+ *
+ *@b: second input
+ *
+ *Return: sum of a & b
 */
 
 int add(int a, int b)
