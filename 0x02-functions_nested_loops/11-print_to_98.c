@@ -1,8 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  *print_to_98 - function that prints
  * all natural numbers from n to 98
+ *
+ *printf: fonction that print variable count
  *
  *@n: input
 */
