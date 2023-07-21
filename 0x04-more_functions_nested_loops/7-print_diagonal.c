@@ -3,8 +3,9 @@
 /**
  * print_diagonal -  function that draws a diagonal line on the terminal.
  *
- *@n: is the numer of time the character \ is
+ * @n: is the numer of time the character \ is
  *    should be print
+ * Return: always 0 (succes)
 */
 
 void print_diagonal(int n)
