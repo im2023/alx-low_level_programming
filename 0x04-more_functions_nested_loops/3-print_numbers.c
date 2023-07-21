@@ -6,7 +6,7 @@
 /**
  * print_numbers - function that prints n from 0 to 9
  *
- * num: declaration of the variable for print_numbers
+ * Return: always 0
 */
 
 void print_numbers(void)
