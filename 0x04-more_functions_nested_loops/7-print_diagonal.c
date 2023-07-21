@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints 10 times the alphabet
+ * print_diagonal -  function that draws a diagonal line on the terminal.
  *
  *@n: is the numer of time the character \ is
  *    should be print
