@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - prints 10 times the numbers
- * from 0 - 14, followed by a new line
+ * from 0 - 14, followed by a new line.
  *
  * Return: Always 0 (succes)
 */
