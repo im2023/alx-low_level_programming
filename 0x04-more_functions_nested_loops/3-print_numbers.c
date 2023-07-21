@@ -4,18 +4,18 @@
 
 
 /**
- *print_numbers - function that prints n from 0 to 9
+ * print_numbers - function that prints n from 0 to 9
  *
- *@n:declaration of the variable for print_numbers
+ * num: declaration of the variable for print_numbers
 */
 
-void print_numbers(int n)
+void print_numbers(void)
 {
-	int n;
+	int num = 0;
 
-	for (n = 0; n <= 9; n++)
-	{
-		_putchar(n + 48);
-	}
+	do {
+		_putchar(num + 48);
+		num++;
+	} while (num >= 0 && num <= 9);
 	_putchar('\n');
 }
