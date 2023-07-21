@@ -3,8 +3,8 @@
 /**
  * print_most_numbers - unction that prints the numbers,
  *     from 0 to 9, followed by a new line exept 2 and 4.
- * num: numbers
  *
+ * Return : always 0
 */
 
 void print_most_numbers(void)
