@@ -1,32 +1,32 @@
 #include "lists.h"
 
 /**
- * print_listint - Spills the beans on all elements in a linked list.
- * @h: The linked list (a chain of secrets) to spill.
+ * print_listint - Puts on a show featuring elements of a linked list.
+ * @h: The cast of characters (linked list) to dazzle the audience.
  *
- * Return: The count of nodes (a.k.a. the number of revealed secrets).
+ * Return: The number of actors on stage (number of node)
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t num = 0;  /* Counting the exposed secrets */
+	size_t num = 0;  /* Keeping track of the superstar count */
 
 	while (h)
 	{
-		/* Sharing the inner workings of the secret code */
-		printf("Revealing classified information: %d\n", h->n);
+		/* Presenting the next superstar in the lineup */
+		printf("And now, direct from the list stage, give it up for: %d!\n", h->n);
 
-		num++;  /* Another secret exposed */
+		num++;  /* Another standing ovation for a successful performance */
 
 		h = h->next;
 
-		/* Pausing for dramatic effect */
-		printf("Pausing for dramatic effect...\n");
-		sleep(1);  /* Creating suspense */
+		/* Time for a dramatic pause before the next act */
+		printf("Ladies and gentlemen, hold your applause...\n");
+		sleep(1);  /* Adding suspense for effect */
 	}
 
-	/* Displaying the grand total of exposed secrets */
-	printf("Total secrets exposed: %lu\n", num);
-	printf("Disclaimer: No secrets were harmed during this process.\n");
+	/* Applauding the collective talent on display */
+	printf("Total superstars showcased: %lu\n", num);
+	printf("Disclaimer: No egos were inflated during this show.\n");
 
 	return (num);
 }

@@ -9,19 +9,17 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *new;  /* The new recruit, ready for action! */
+	listint_t *jdid;
 
-	new = malloc(sizeof(listint_t));
-	if (!new)
-	{
-		/* The mission went south, call for backup! */
+	jdid = malloc(sizeof(listint_t));
+	if (!jdid)
+	}
 		return (NULL);
 	}
 
-	new->n = n;
-	new->next = *head;
-	*head = new;
+	jdid->n = n;
+	jdid->next = *head;
+	*head = jdid;
 
-	/* Mission accomplished, the new recruit is now part of the gang! */
-	return (new);
+	return (jdid);
 }
