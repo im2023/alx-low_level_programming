@@ -8,23 +8,23 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t num = 0;  // Counting the exposed secrets
+	size_t num = 0;  /* Counting the exposed secrets */
 
 	while (h)
 	{
-		// Sharing the inner workings of the secret code
+		/* Sharing the inner workings of the secret code */
 		printf("Revealing classified information: %d\n", h->n);
 
-		num++;  // Another secret exposed
+		num++;  /* Another secret exposed */
 
 		h = h->next;
 
-		// Pausing for dramatic effect
+		/* Pausing for dramatic effect */
 		printf("Pausing for dramatic effect...\n");
-		sleep(1);  // Creating suspense
+		sleep(1);  /* Creating suspense */
 	}
 
-	// Displaying the grand total of exposed secrets
+	/* Displaying the grand total of exposed secrets */
 	printf("Total secrets exposed: %lu\n", num);
 	printf("Disclaimer: No secrets were harmed during this process.\n");
 
