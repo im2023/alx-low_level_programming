@@ -1,25 +1,25 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Performs a daring heist to add a new node
- * @head: Pointer to the big boss of the gang (first node).
- * @n: The undercover data that the new recruit will carry.
+ * add_nodeint - adds a new node at the beginning of a linked list
  *
- * Return: A pointer to the new node, or NULL if the mission fails.
+ * @head: pointer to the first node in list.
+ *
+ * @n: data to insert in that new node
+ *
+ * Return: pointer to the new node t, or NULL.
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *jdid;
+	listint_t *t;
 
-	jdid = malloc(sizeof(listint_t));
-	if (!jdid)
-	}
+	t = malloc(sizeof(listint_t));
+	if (!t)
 		return (NULL);
-	}
 
-	jdid->n = n;
-	jdid->next = *head;
-	*head = jdid;
+	t->n = n;
+	t->next = *head;
+	*head = t;
 
-	return (jdid);
+	return (t);
 }
