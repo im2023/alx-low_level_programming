@@ -1,24 +1,24 @@
 #include "lists.h"
 
-/*
- * Function to go on a daring adventure to tally up the riches
- *  hidden within a horde of listint_t treasures.
- * Arguments:
- *   head: The intrepid leader of the treasure map.
+/**
+ * sum_listint - Calculating the sum of all data in listint_t list
  *
- * Returns:
- *   The grand total of the treasures collected (or 0 if the horde is empty).
+ * @head: is first node
+ *
+ * Return: result of s.
  */
 int sum_listint(listint_t *head)
 {
-	int s = 0; /* Initializing our treasure chest to start collecting riches. */
-	listint_t *t = head; /* Our loyal map to navigate the treasure trail. */
+	int s = 0;
+
+	listint_t *t = head;
 
 	while (t)
 	{
-		s += t->n; /* Adding to our ever-growing pile of loot. */
-		t = t->next; /* Moving forward on our epic treasure expedition. */
+		s += t->n;
+
+		t = t->next;
 	}
 
-	return (s); /* Presenting our amassed fortune to the world. */
+	return (s);
 }
