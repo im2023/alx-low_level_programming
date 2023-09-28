@@ -3,7 +3,7 @@
 /**
  * get_endianness - Checks the endianness of the machine.
  *
- * Return: 0 for big endian, 1 for the small.
+ * Return: 0 for big endian, 1 for the smalls .
  */
 int get_endianness(void)
 {
@@ -13,4 +13,3 @@ int get_endianness(void)
 
 	return (*p);
 }
-
