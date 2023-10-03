@@ -5,7 +5,7 @@
  *
  * @filename: is pointing name of the file to be created.
  *
- * @text_content: file of the text to be write.
+ * @text_content: file of the text to be writed.
  *
  * Return: On success, 1. On failure or if @filename is NULL, -1.
  */
