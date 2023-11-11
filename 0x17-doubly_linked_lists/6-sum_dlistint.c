@@ -12,7 +12,6 @@ int sum_dlistint(dlistint_t *head)
 {
 	int s = 0;
 
-	/* while we have a pointer to the list */
 	while (head != NULL)
 	{
 		s += head->n;
