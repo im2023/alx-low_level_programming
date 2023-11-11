@@ -7,6 +7,7 @@
  *
  * Return: The sum of all data values, or 0 if the list is empty.
  */
+
 int sum_dlistint(dlistint_t *head)
 {
 	int s = 0;
@@ -14,9 +15,10 @@ int sum_dlistint(dlistint_t *head)
 	while (head != NULL)
 	{
 
-	
+
 		s += head->n;
 		head = head->next;
 	}
-	return s;
+
+	return (s);
 }
