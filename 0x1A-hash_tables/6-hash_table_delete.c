@@ -2,27 +2,27 @@
 
 /**
  * hash_table_delete - Deleting hash table
+ * 
+ * @ht: the Hash table
  *
- * @ht: the Hash table.
- *
- * Return: (Void).
+ * Return: retuning Void
  */
 void hash_table_delete(hash_table_t *ht)
 {
-	unsigned long int n;
-	hash_node_t *t;
+	unsigned long int x;
+	hash_node_t *new_hash;
 
-	for (n = 0; n < ht->size; n++)
+	for (x = 0; x < ht->size; x++)
 	{
-		if (ht->array[n] != NULL)
+		if (ht->array[x] != NULL)
 		{
-			while (ht->array[n] != NULL)
+			while (ht->array[x] != NULL)
 			{
-				t = ht->array[n]->next;
-				free(ht->array[n]->key);
-				free(ht->array[n]->value);
-				free(ht->array[n]);
-				ht->array[n] = t;
+				new_hash = ht->array[x]->next;
+				free(ht->array[x]->key);
+				free(ht->array[x]->value);
+				free(ht->array[x]);
+				ht->array[x] = new_hash;
 			}
 		}
 	}
