@@ -1,8 +1,11 @@
 #include "hash_tables.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 /**
  * hash_table_delete - Deleting hash table
- * 
+ *
  * @ht: the Hash table
  *
  * Return: retuning Void
