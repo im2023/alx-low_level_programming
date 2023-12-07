@@ -9,24 +9,27 @@
  *
  * Return: value ,if not NULL.
  */
+
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int x;
-	hash_node_t *t;
+	unsigned long int index;
+	hash_node_t *node;
 
-	if (strcmp(key, "") == 0 || key == NULL || ht == NULL)
+	if (ht == NULL)
 		return (NULL);
-
-	x = key_index((const unsigned char *)key, ht->size);
-	t = ht->array[x];
-	if (t == NULL)
+	if (key == NULL)
 		return (NULL);
-	while (strcmp(t->key, key) && t != NULL)
+	index = key_index((unsigned char *)key, ht->size);
+	if (ht->array[index] == NULL)
+		return (NULL);
+	if (strcmp(ht->array[index]->key, key) == 0)
+		return (ht->array[index]->value);
+	node = ht->array[index];
+	while (node != NULL)
 	{
-		t = t->next;
+		if (strcmp(node->key, key) == 0)
+			return (node->value);
+		node = node->next;
 	}
-	if (t == NULL)
-		return (NULL);
-	else
-		return (t->value);
+	return (NULL);
 }
